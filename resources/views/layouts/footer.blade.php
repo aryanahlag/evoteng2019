@@ -34,5 +34,15 @@
 
 <!-- PAGE SCRIPTS -->
 <script src="{{ asset('assets') }}/js/pages/dashboard2.js"></script>
+<script>
+var time = 10;
+    setTimeout(() => {
+        document.getElementById('logout-form').submit();
+    }, 10000);
+    
+    setInterval(() => {
+       document.getElementById('time').innerHTML = time -= 1 
+    }, 1000);
+</script>
 </body>
 </html>

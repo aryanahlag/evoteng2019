@@ -133,7 +133,7 @@
         </div>
       </li> --}}
       <li class="nav-item">
-        <form action="{{ route('logout') }}" method="POST">
+        <form action="{{ route('logout') }}" id="logout-form" method="POST">
         @csrf
         <button type="submit" class="btn btn-danger"><i class="fas fa-sign-out-alt"></i> Logout</button>
         </form>
